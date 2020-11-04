@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "81137977101",
+    "firebase_url": "https://loja-virtual-6c256.firebaseio.com",
+    "project_id": "loja-virtual-6c256",
+    "storage_bucket": "loja-virtual-6c256.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81137977101:android:4aff38de324dec71115244",
+        "android_client_info": {
+          "package_name": "com.thisan.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81137977101-gt3onlst91pce9hqdugjoth483i6me1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_T-sBPqw4SSm_ldcGBg0a5dL3X71ngJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81137977101-gt3onlst91pce9hqdugjoth483i6me1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
