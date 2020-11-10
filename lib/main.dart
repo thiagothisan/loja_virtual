@@ -1,10 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'file:///C:/Development/Projects/Flutter/loja_virtual/lib/screens/base/base_screen.dart';
 
-void main() {
+
+
+void main() async {
   runApp(MyApp());
 
-  Firestore.instance.collection('teste').add({'teste': 'teste'});
+   Firestore.instance.collection('pedidos').snapshots().listen((snapshot) {
+     for(DocumentSnapshot document in snapshot.documents){
+       print(document.data);
+     }
+   });
 }
 
 class MyApp extends StatelessWidget {
@@ -12,12 +19,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Loja Virtual',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: const Color.fromARGB(255, 4, 125, 141),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 4, 125, 141),
+        appBarTheme: const AppBarTheme(
+          elevation: 0
+        ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Container(),
+      home: BaseScreen(),
     );
   }
 }
